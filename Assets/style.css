@@ -9,6 +9,14 @@
     --brown: rgb(97, 55, 31);
 }
 
+body{
+    background-image: url(./pink.avif);
+    /* background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; */
+}
+
+/* The content below is the Header/nav */
 .container{
     display: flex;
     align-items:center;
@@ -27,13 +35,55 @@ h1{
 nav ul{
     display: flex;
     list-style: none;
+    
 }
+
+.navlink, .navlink:hover, .navlink:visited, .navlink:active{
+    text-decoration: none;
+    color: inherit;
+
+}
+
 
 nav ul li{
     margin-right: 20px;
     text-decoration: underline;
 }
 
+nav ul li:hover{
+    color: white;
+}
+/* Below will be the about me section */
+.aboutmeheader, .contactheader{
+    display: flex;
+    align-items: center;
+    font-size: 80px;
+    padding: 133px;
+    border-right: 5px solid black;
+}
+
+.about-me{
+    
+    background-color: var(--lightpink);
+    padding: 20px;
+    display: flex;
+    justify-content:space-between;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    color: var(--brown);
+    position: relative;
+    align-items: center;
+}
+
+.aboutmecontent{
+   
+    padding: 50px;
+    flex-wrap: wrap;
+    font-size: 30px;
+}
+
+
+/* Below will be MyWork */
 .mainimg{
     display: flex;
     max-width: 80%;
@@ -71,7 +121,6 @@ nav ul li{
 
 .mainfig{
     position: relative;
-    /* margin-right: 300px; */
     justify-content: center;
 }
 
@@ -79,35 +128,7 @@ img:hover{
     opacity: .75;
 }
 
-body{
-    background-image: url(./pink.avif);
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center; */
-}
-
-.about-me{
-    /* margin-bottom: 50px; */
-    background-color: var(--lightpink);
-    padding: 20px;
-    display: flex;
-    justify-content:space-between;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    color: var(--brown);
-    position: relative;
-    align-items: center;
-}
-
-.aboutmecontent{
-   
-    padding: 10px;
-    flex-wrap: wrap;
-    font-size: 30px;
-}
-
 .mywork{
-    /* margin-bottom: 50px; */
     position: relative;
     background-color: var(--lightpink);
     display: flex;
@@ -121,7 +142,7 @@ body{
 .myworkheader{
     display: flex;
     align-items: center;
-    font-size: 50px;
+    font-size: 80px;
     padding:140px;
     border-right: 5px solid black;
 }
@@ -132,28 +153,14 @@ body{
     background-color: var(--brown);
     padding: 30px;
     top:40%;
-    right:80.6%;
+    right:80.4%;
     border: 5px solid var(--brown);
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
 
-.aboutmeheader, .contactheader{
-    display: flex;
-    align-items: center;
-    font-size: 50px;
-    padding: 133px;
-    border-right: 5px solid black;
-}
 
-footer{
-    text-align: center;
-    background-color: var(--lightpink);
-    color:var(--brown);
-    padding: 30px;
-    border-top: 5px solid black;
-}
-
+/* Below is ContactMe */
 .contact{
     display: flex;
     background-color: var(--lightpink);
@@ -173,4 +180,13 @@ footer{
 
 .contactcontent li{
     margin-right: 40px;
+}
+
+/* Below is Footer */
+footer{
+    text-align: center;
+    background-color: var(--lightpink);
+    color:var(--brown);
+    padding: 30px;
+    border-top: 5px solid black;
 }
