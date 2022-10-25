@@ -26,16 +26,15 @@
 
       <nav class="navbar">
         <ul>
-          <li>About Me</li>
-          <li>My Work</li>
-          <li>Contact Me</li>
-          <li>Resume</li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#mywork">My Work</a></li>
+          <li><a href="#contactme">Contact Me</a></li>
         </ul>
       </nav>
     </div>
 
     <main>
-      <section class="about-me">
+      <section id="aboutme" class="about-me">
         <h2 class="aboutmeheader">About Me</h2>
         <p class="aboutmecontent">
           Hello! My names is Bradley Rodriguez. I am currently working through
@@ -45,21 +44,47 @@
         </p>
       </section>
 
-      <section class="mywork">
+      <section id="mywork" class="mywork">
         <h2 class="myworkheader">My Work</h2>
-        <a
-          href="https://heyitsbradley.github.io/Prework-study-guide/"
-          target="_blank"
-        >
-          <img
-            class="pw-img"
-            src="./Assets/prework-image.PNG"
-            alt="An image of my Study Guide Repo"
-          />
-        </a>
+        <figure>
+          <a
+            href="https://heyitsbradley.github.io/Prework-study-guide/"
+            target="_blank"
+          >
+            <img
+              src="./Assets/study.avif"
+              alt="An image of my Study Guide Repo"
+            />
+          </a>
+        </figure>
         <div class="image-desc">
           <h3>Study Guide</h3>
+          <p>HTML,CSS,& JS</p>
         </div>
+      </section>
+
+      <section id="contactme" class="contact">
+        <h2 class="contactheader">Contact Me!</h2>
+
+        <ul class="contactcontent">
+          <li>
+            <a href="mailto: bradleyrodriguez77@gmail.com"
+              >Bradleyrodriguez77@gmail.com</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/HeyItsBradley" target="_blank"
+              >GitHub</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://discordapp.com/users/522224589489569813/"
+              target="_blank"
+              >Discord</a
+            >
+          </li>
+        </ul>
       </section>
     </main>
     <footer>
