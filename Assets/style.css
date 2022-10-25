@@ -3,10 +3,12 @@
     padding: 0;
     font-family: 'Bebas Neue', cursive;
 }
+
 :root{
     --lightpink: rgb(255, 210, 229);
     --brown: rgb(97, 55, 31);
 }
+
 .container{
     display: flex;
     align-items:center;
@@ -16,8 +18,12 @@
     padding: 20px;
     color: var(--brown);
     border-bottom: 5px solid black;
+    font-size: 24px;
 }
 
+h1{
+    font-size: 50px;
+}
 nav ul{
     display: flex;
     list-style: none;
@@ -36,6 +42,7 @@ nav ul li{
     justify-content: center;
     position: relative;
 }
+
 .centerplz{
     display: flex;
     justify-content: center;
@@ -48,7 +55,6 @@ nav ul li{
     border: 5px solid var(--brown);
     border-radius: 20px;
     margin: 10%;
-    
 }
 
 .smallimgcontent{
@@ -56,15 +62,11 @@ nav ul li{
     justify-content:space-around;
     flex-wrap: wrap;
     margin-right: 8%;
-
-
-
 }
 .myworkcontent{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    
 }
 
 .mainfig{
@@ -94,9 +96,7 @@ body{
     border-bottom: 5px solid black;
     color: var(--brown);
     position: relative;
-    align-items: center
-;
-    
+    align-items: center;
 }
 
 .aboutmecontent{
@@ -106,26 +106,6 @@ body{
     font-size: 30px;
 }
 
-/* .contact-content{
-    display: flex;
-    padding: 10px;
-    flex-wrap: wrap;
-    font-size: 30px;
-    justify-content: space-evenly;
-
-}
-
-.contact-content ul{
-    display: flex;
-    list-style: none;
-    justify-content: space-around;
-} */
-
-.contactcontent ul li{
-    display: flex;
-    margin-right: 400px;
-    flex-wrap: wrap;
-}
 .mywork{
     /* margin-bottom: 50px; */
     position: relative;
@@ -156,7 +136,6 @@ body{
     border: 5px solid var(--brown);
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
-
 }
 
 .aboutmeheader, .contactheader{
@@ -165,7 +144,6 @@ body{
     font-size: 50px;
     padding: 133px;
     border-right: 5px solid black;
-    
 }
 
 footer{
@@ -190,7 +168,7 @@ footer{
     display: flex;
     font-size: 40px;
     margin-right: 300px;
-    
+    flex-wrap: wrap;
 }
 
 .contactcontent li{
