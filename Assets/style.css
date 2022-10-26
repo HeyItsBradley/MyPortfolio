@@ -242,3 +242,41 @@ footer{
     }
 
 }
+@media screen and (max-width:578px){
+    .container{
+        min-width: 110vw;}
+    .about-me{
+        min-width: 110vw;
+    }
+    .mywork{
+        min-width: 110vw;
+    }
+    .image-desc{
+        right: 75%;
+        position: absolute;
+        font-size: 10px;
+        padding: 5px;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        
+    }
+    .smallimg{
+        display: flex;
+        max-width: 500px;
+        min-width: 311px;
+        margin-right: 40%;}
+    .contact{
+        min-width: 110vw;
+    }
+    .contactcontent{
+        font-size: 30px;
+    }
+    footer{
+        min-width: 110vw;
+    }
+        
+    
+    
+}
+
+
