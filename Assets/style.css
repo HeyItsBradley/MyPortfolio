@@ -3,12 +3,12 @@
     padding: 0;
     font-family: 'Bebas Neue', cursive;
 }
-
+/* These variables are the main colors for the web page */
 :root{
     --lightpink: rgb(255, 210, 229);
     --brown: rgb(97, 55, 31);
 }
-
+/* this link is for the background image of the site */
 body{
     background-image: url(./pink.avif);
 }
@@ -34,22 +34,22 @@ nav ul{
     list-style: none;
     
 }
-
+/* this just fixes the color of the nav to brown  */
 .navlink, .navlink:hover, .navlink:visited, .navlink:active{
     text-decoration: none;
     color: inherit;
 
 }
 
+nav ul li:hover{
+    color: white;
+}
 
 nav ul li{
     margin-right: 20px;
     text-decoration: underline;
 }
 
-nav ul li:hover{
-    color: white;
-}
 /* Below will be the about me section */
 .aboutmeheader, .contactheader{
     display: flex;
@@ -90,7 +90,7 @@ nav ul li:hover{
     position: relative;
 }
 
-.centerplz{
+.centerMainIMG{
     display: flex;
     justify-content: center;
 }
@@ -144,7 +144,7 @@ img:hover{
     padding:140px;
     border-right: 5px solid black;
 }
-
+/* this class is for the small box inside the main image */
 .image-desc{
     position: absolute;
     color: var(--lightpink);
@@ -188,6 +188,7 @@ footer{
     padding: 30px;
     border-top: 5px solid black;
 }
+/* Screen size for iPad view */
 @media screen and (max-width:992px){
     .about-me{
         display: flex;
@@ -233,7 +234,7 @@ footer{
 }
 
 
-
+/* this will be for mobile phones */
 @media screen and (max-width:798px){
     .image-desc{
         right: 71.5%;
@@ -242,6 +243,8 @@ footer{
     }
 
 }
+
+/* This is the screen size for an iphone */
 @media screen and (max-width:578px){
     .container{
         min-width: 100vw;}
