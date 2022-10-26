@@ -244,12 +244,12 @@ footer{
 }
 @media screen and (max-width:578px){
     .container{
-        min-width: 110vw;}
+        min-width: 100vw;}
     .about-me{
-        min-width: 110vw;
+        min-width: 100vw;
     }
     .mywork{
-        min-width: 110vw;
+        min-width: 100vw;
     }
     .image-desc{
         right: 75%;
@@ -266,13 +266,13 @@ footer{
         min-width: 311px;
         margin-right: 40%;}
     .contact{
-        min-width: 110vw;
+        min-width: 100vw;
     }
     .contactcontent{
         font-size: 30px;
     }
     footer{
-        min-width: 110vw;
+        min-width: 100vw;
     }
         
     
