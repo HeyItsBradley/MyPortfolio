@@ -79,67 +79,12 @@ nav ul li{
     flex-wrap: wrap;
     font-size: 30px;
 }
-
+/* styling for PFP */
 .pfp{
     height: 7vw;
     width: 7vw;
 }
-
 /* Below will be MyWork */
-.mainimg{
-    display: flex;
-    max-width: 80%;
-    border: 5px solid var(--brown);
-    border-radius: 20px;
-    justify-content: center;
-    position: relative;
-}
-
-.centerMainIMG{
-    display: flex;
-    justify-content: center;
-}
-
-.smallimg{
-    display: flex;
-    max-height: 150px;
-    min-width: 490px;
-    border: 5px solid var(--brown);
-    border-radius: 20px;
-    margin: 10%;
-}
-
-.smallimgcontent{
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    margin-right: 8%;
-}
-.myworkcontent{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.mainfig{
-    position: relative;
-    display: flex;
-    position: relative;
-    justify-content: center;
-}
-
-.mainfig img:hover{
-    opacity: .75;
-}
-article:hover{
-    opacity: .75;
-
-}
-
-a img:hover{
-    opacity: .75;
-}
-
 .mywork{
     position: relative;
     background-color: var(--lightpink);
@@ -158,7 +103,11 @@ a img:hover{
     padding:140px;
     border-right: 5px solid black;
 }
-/* this class is for the small box inside the main image */
+.myworkcontent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 .image-desc{
     position: absolute;
     color: var(--lightpink);
@@ -183,6 +132,31 @@ a img:hover{
     text-decoration: none;
     color: var(--lightpink);
 }
+.smallimg{
+    display: flex;
+    max-height: 150px;
+    min-width: 490px;
+    border: 5px solid var(--brown);
+    border-radius: 20px;
+    margin: 10%;
+}
+
+.smallimgcontent{
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+    margin-right: 8%;
+}
+
+article:hover{
+    opacity: .75;
+
+}
+
+a img:hover{
+    opacity: .75;
+}
+
 /* This is so the study guide text in the main image is centered */
 .mywork article div{
     display: flex;
@@ -255,11 +229,6 @@ footer{
         border-right: none;
         border-bottom: 5px solid black;
     }
-    .image-desc{
-        right: 75.1%;
-        position: absolute;
-        
-    }
     
     .contact{
         display: flex;
@@ -286,7 +255,7 @@ footer{
         text-decoration: none;
         color: var(--lightpink);
     }
-    /* This is so the study guide text in the main image is centered */
+    
     .mywork article div{
         display: flex;
         justify-content: center;
@@ -306,11 +275,7 @@ footer{
 
 /* this will be for mobile phones */
 @media screen and (max-width:798px){
-    .image-desc{
-        right: 71.5%;
-        position: absolute;
-        
-    }
+
     .pfp{
         height: 30vw;
         width: 30vw;
@@ -327,7 +292,7 @@ footer{
         text-decoration: none;
         color: var(--lightpink);
     }
-    /* This is so the study guide text in the main image is centered */
+    
     .mywork article div{
         display: flex;
         justify-content: center;
@@ -345,23 +310,10 @@ footer{
 
 /* This is the screen size for an iphone */
 @media screen and (max-width:578px){
-    .container{
+    .container, .about-me, .mywork, .contact, footer{
         min-width: 100vw;}
-    .about-me{
-        min-width: 100vw;
-    }
-    .mywork{
-        min-width: 100vw;
-    }
-    .image-desc{
-        right: 75%;
-        position: absolute;
-        font-size: 10px;
-        padding: 5px;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        
-    }
+   
+   
     .smallimg{
         display: flex;
         max-width: 500px;
@@ -373,9 +325,7 @@ footer{
     .contactcontent{
         font-size: 30px;
     }
-    footer{
-        min-width: 100vw;
-    }
+    
     .pfp{
         height: 30vw;
         width: 30vw;
@@ -393,7 +343,7 @@ footer{
         text-decoration: none;
         color: var(--lightpink);
     }
-    /* This is so the study guide text in the main image is centered */
+   
     .mywork article div{
         display: flex;
         justify-content: center;
