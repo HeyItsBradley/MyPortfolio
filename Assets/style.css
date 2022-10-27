@@ -122,12 +122,21 @@ nav ul li{
 }
 
 .mainfig{
+    position: relative;
     display: flex;
     position: relative;
     justify-content: center;
 }
 
-img:hover{
+.mainfig img:hover{
+    opacity: .75;
+}
+article:hover{
+    opacity: .75;
+
+}
+
+a img:hover{
     opacity: .75;
 }
 
@@ -161,7 +170,38 @@ img:hover{
     border-top-right-radius: 25px;
     border-bottom-right-radius: 25px;
 }
-
+/* this will diplay the study guide link image */
+.mywork article{
+    display: flex;
+    align-items: center;
+    background-image: url(./study.avif);
+    background-size: 1200px 400px;
+    height: 400px;
+    width: 1150px;
+    border: 5px solid var(--brown);
+    border-radius: 25px;
+    text-decoration: none;
+    color: var(--lightpink);
+}
+/* This is so the study guide text in the main image is centered */
+.mywork article div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brown);
+    width: 10%;
+    height: 13%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    color: var(--lightpink);
+}
+/* this is so the study guide text on the main img doesnt change colors */
+.mywork article div, .mywork article div:hover, .mywork article div:visited, .mywork article div:active{
+    text-decoration: none;
+    color: inherit;
+    
+}
 
 /* Below is ContactMe */
 .contact{
@@ -234,6 +274,31 @@ footer{
     .contactcontent{
         margin-left: 400px;
     }
+    .mywork article{
+        display: flex;
+        align-items: center;
+        background-image: url(./study.avif);
+        background-size: 700px 400px;
+        height: 400px;
+        width: 700px;
+        border: 5px solid var(--brown);
+        border-radius: 25px;
+        text-decoration: none;
+        color: var(--lightpink);
+    }
+    /* This is so the study guide text in the main image is centered */
+    .mywork article div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--brown);
+        width: 15%;
+        height: 16%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-decoration: none;
+        color: var(--lightpink);
+    }
 
 
 }
@@ -249,6 +314,31 @@ footer{
     .pfp{
         height: 30vw;
         width: 30vw;
+    }
+    .mywork article{
+        display: flex;
+        align-items: center;
+        background-image: url(./study.avif);
+        background-size: 600px 300px;
+        height: 300px;
+        width: 600px;
+        border: 5px solid var(--brown);
+        border-radius: 25px;
+        text-decoration: none;
+        color: var(--lightpink);
+    }
+    /* This is so the study guide text in the main image is centered */
+    .mywork article div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--brown);
+        width: 18%;
+        height: 17%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-decoration: none;
+        color: var(--lightpink);
     }
 
 }
@@ -291,6 +381,31 @@ footer{
         width: 30vw;
     }
         
+    .mywork article{
+        display: flex;
+        align-items: center;
+        background-image: url(./study.avif);
+        background-size: 400px 200px;
+        height: 200px;
+        width: 400px;
+        border: 5px solid var(--brown);
+        border-radius: 25px;
+        text-decoration: none;
+        color: var(--lightpink);
+    }
+    /* This is so the study guide text in the main image is centered */
+    .mywork article div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--brown);
+        width: 20%;
+        height: 16%;
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        text-decoration: none;
+        color: var(--lightpink);
+    }
     
     
 }
