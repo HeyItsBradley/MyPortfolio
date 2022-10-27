@@ -26,6 +26,7 @@ body{
     font-size: 24px;
 }
 
+
 h1{
     font-size: 50px;
 }
@@ -38,7 +39,7 @@ nav ul{
 .navlink, .navlink:hover, .navlink:visited, .navlink:active{
     text-decoration: none;
     color: inherit;
-
+    
 }
 
 nav ul li:hover{
@@ -73,12 +74,16 @@ nav ul li{
 }
 
 .aboutmecontent{
-   
+    
     padding: 50px;
     flex-wrap: wrap;
     font-size: 30px;
 }
 
+.pfp{
+    height: 7vw;
+    width: 7vw;
+}
 
 /* Below will be MyWork */
 .mainimg{
@@ -241,6 +246,10 @@ footer{
         position: absolute;
         
     }
+    .pfp{
+        height: 30vw;
+        width: 30vw;
+    }
 
 }
 
@@ -276,6 +285,10 @@ footer{
     }
     footer{
         min-width: 100vw;
+    }
+    .pfp{
+        height: 30vw;
+        width: 30vw;
     }
         
     

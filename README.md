@@ -21,3 +21,7 @@ https://heyitsbradley.github.io/MyPortfolio/
 https://unsplash.com/images/stock/royalty-free
 
 I pulled the images for this project from Unsplash.com
+
+https://pixabay.com/
+
+Blank avatar from pixabay.com
