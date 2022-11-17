@@ -1,363 +1,357 @@
-*{
-    margin: 0;
-    padding: 0;
-    font-family: 'Bebas Neue', cursive;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Bebas Neue", cursive;
 }
 /* These variables are the main colors for the web page */
-:root{
-    --lightpink: rgb(255, 210, 229);
-    --brown: rgb(97, 55, 31);
+:root {
+  --lightpink: rgb(255, 210, 229);
+  --brown: rgb(97, 55, 31);
 }
 /* this link is for the background image of the site */
-body{
-    background-image: url(./pink.avif);
+body {
+  background-image: url(./pink.avif);
 }
 
 /* The content below is the Header/nav */
-.container{
-    display: flex;
-    align-items:center;
-    justify-content: space-between;
-    background-color: var(--lightpink);
-    margin-bottom: 100px;
-    padding: 20px;
-    color: var(--brown);
-    border-bottom: 5px solid black;
-    font-size: 24px;
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--lightpink);
+  margin-bottom: 100px;
+  padding: 20px;
+  color: var(--brown);
+  border-bottom: 5px solid black;
+  font-size: 24px;
 }
 
-
-h1{
-    font-size: 50px;
+h1 {
+  font-size: 50px;
 }
-nav ul{
-    display: flex;
-    list-style: none;
-    
+nav ul {
+  display: flex;
+  list-style: none;
 }
 /* this just fixes the color of the nav to brown  */
-.navlink, .navlink:hover, .navlink:visited, .navlink:active{
-    text-decoration: none;
-    color: inherit;
-    
+.navlink,
+.navlink:hover,
+.navlink:visited,
+.navlink:active {
+  text-decoration: none;
+  color: inherit;
 }
 
-nav ul li:hover{
-    color: white;
+nav ul li:hover {
+  color: white;
 }
 
-nav ul li{
-    margin-right: 20px;
-    text-decoration: underline;
+nav ul li {
+  margin-right: 20px;
+  text-decoration: underline;
 }
 
 /* Below will be the about me section */
-.aboutmeheader, .contactheader{
-    display: flex;
-    align-items: center;
-    font-size: 80px;
-    padding: 133px;
-    border-right: 5px solid black;
+.aboutmeheader,
+.contactheader {
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+  padding: 133px;
+  border-right: 5px solid black;
 }
 
-.about-me{
-    
-    background-color: var(--lightpink);
-    padding: 20px;
-    display: flex;
-    justify-content:space-between;
-    border-top: 5px solid black;
-    border-bottom: 5px solid black;
-    color: var(--brown);
-    position: relative;
-    align-items: center;
+.about-me {
+  background-color: var(--lightpink);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
+  color: var(--brown);
+  position: relative;
+  align-items: center;
 }
 
-.aboutmecontent{
-    
-    padding: 50px;
-    flex-wrap: wrap;
-    font-size: 30px;
+.aboutmecontent {
+  padding: 50px;
+  flex-wrap: wrap;
+  font-size: 30px;
 }
 /* styling for PFP */
-.pfp{
-    height: 7vw;
-    width: 7vw;
+.pfp {
+  height: 7vw;
+  width: 7vw;
 }
 /* Below will be MyWork */
-.mywork{
-    position: relative;
-    background-color: var(--lightpink);
-    display: flex;
-    padding: 20px;
-    justify-content: space-between;
-    color: var(--brown);
-    border-bottom: 5px solid black;
-    
+.mywork {
+  position: relative;
+  background-color: var(--lightpink);
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  color: var(--brown);
+  border-bottom: 5px solid black;
 }
 
-.myworkheader{
-    display: flex;
-    align-items: center;
-    font-size: 80px;
-    padding:140px;
-    border-right: 5px solid black;
+.myworkheader {
+  display: flex;
+  align-items: center;
+  font-size: 80px;
+  padding: 140px;
+  border-right: 5px solid black;
 }
-.myworkcontent{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.myworkcontent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.image-desc{
-    position: absolute;
-    color: var(--lightpink);
-    background-color: var(--brown);
-    padding: 30px;
-    top:40%;
-    right:80.4%;
-    border: 5px solid var(--brown);
-    border-top-right-radius: 25px;
-    border-bottom-right-radius: 25px;
+.image-desc {
+  position: absolute;
+  color: var(--lightpink);
+  background-color: var(--brown);
+  padding: 30px;
+  top: 40%;
+  right: 80.4%;
+  border: 5px solid var(--brown);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 }
 /* this will diplay the study guide link image */
-.mywork article{
+.mywork article {
+  display: flex;
+  align-items: center;
+  background-image: url(./study.avif);
+  background-size: 1200px 400px;
+  height: 400px;
+  width: 1150px;
+  border: 5px solid var(--brown);
+  border-radius: 25px;
+  text-decoration: none;
+  color: var(--lightpink);
+}
+.smallimg {
+  display: flex;
+  max-height: 150px;
+  min-width: 490px;
+  border: 5px solid var(--brown);
+  border-radius: 20px;
+  margin: 10%;
+}
+
+.smallimgcontent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-right: 8%;
+}
+
+article:hover {
+  opacity: 0.75;
+}
+
+a img:hover {
+  opacity: 0.75;
+}
+
+/* This is so the study guide text in the main image is centered */
+.mywork article div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--brown);
+  width: 10%;
+  height: 13%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-decoration: none;
+  color: var(--lightpink);
+}
+/* this is so the study guide text on the main img doesnt change colors */
+.mywork article div,
+.mywork article div:hover,
+.mywork article div:visited,
+.mywork article div:active {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Below is ContactMe */
+.contact {
+  display: flex;
+  background-color: var(--lightpink);
+  color: var(--brown);
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.contactcontent {
+  list-style: none;
+  display: flex;
+  font-size: 40px;
+  margin-right: 300px;
+  flex-wrap: wrap;
+}
+
+.contactcontent li {
+  margin-right: 40px;
+}
+
+/* Below is Footer */
+.footer {
+  text-align: center;
+  background-color: var(--lightpink);
+  color: var(--brown);
+  padding: 30px;
+  border-top: 5px solid black;
+}
+/* Screen size for iPad view */
+@media screen and (max-width: 992px) {
+  .about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .aboutmeheader {
+    border-right: none;
+    border-bottom: 5px solid black;
+  }
+  .mywork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .myworkheader {
+    margin-bottom: 20px;
+    border-right: none;
+    border-bottom: 5px solid black;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contactheader {
+    border-right: none;
+    border-bottom: 5px solid black;
+  }
+
+  .contactcontent {
+    margin-left: 400px;
+  }
+  .mywork article {
     display: flex;
     align-items: center;
     background-image: url(./study.avif);
-    background-size: 1200px 400px;
+    background-size: 700px 400px;
     height: 400px;
-    width: 1150px;
+    width: 700px;
     border: 5px solid var(--brown);
     border-radius: 25px;
     text-decoration: none;
     color: var(--lightpink);
-}
-.smallimg{
-    display: flex;
-    max-height: 150px;
-    min-width: 490px;
-    border: 5px solid var(--brown);
-    border-radius: 20px;
-    margin: 10%;
-}
+  }
 
-.smallimgcontent{
-    display: flex;
-    justify-content:space-around;
-    flex-wrap: wrap;
-    margin-right: 8%;
-}
-
-article:hover{
-    opacity: .75;
-
-}
-
-a img:hover{
-    opacity: .75;
-}
-
-/* This is so the study guide text in the main image is centered */
-.mywork article div{
+  .mywork article div {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: var(--brown);
-    width: 10%;
-    height: 13%;
+    width: 15%;
+    height: 16%;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     text-decoration: none;
     color: var(--lightpink);
+  }
 }
-/* this is so the study guide text on the main img doesnt change colors */
-.mywork article div, .mywork article div:hover, .mywork article div:visited, .mywork article div:active{
-    text-decoration: none;
-    color: inherit;
-    
-}
-
-/* Below is ContactMe */
-.contact{
-    display: flex;
-    background-color: var(--lightpink);
-    color: var(--brown);
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.contactcontent{
-    list-style: none;
-    display: flex;
-    font-size: 40px;
-    margin-right: 300px;
-    flex-wrap: wrap;
-}
-
-.contactcontent li{
-    margin-right: 40px;
-}
-
-/* Below is Footer */
-footer{
-    text-align: center;
-    background-color: var(--lightpink);
-    color:var(--brown);
-    padding: 30px;
-    border-top: 5px solid black;
-}
-/* Screen size for iPad view */
-@media screen and (max-width:992px){
-    .about-me{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        
-    }
-    .aboutmeheader{
-        border-right: none;
-        border-bottom: 5px solid black;
-    }
-    .mywork{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .myworkheader{
-        margin-bottom: 20px;
-        border-right: none;
-        border-bottom: 5px solid black;
-    }
-    
-    .contact{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .contactheader{
-        border-right: none;
-        border-bottom: 5px solid black;
-    }
-
-    .contactcontent{
-        margin-left: 400px;
-    }
-    .mywork article{
-        display: flex;
-        align-items: center;
-        background-image: url(./study.avif);
-        background-size: 700px 400px;
-        height: 400px;
-        width: 700px;
-        border: 5px solid var(--brown);
-        border-radius: 25px;
-        text-decoration: none;
-        color: var(--lightpink);
-    }
-    
-    .mywork article div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--brown);
-        width: 15%;
-        height: 16%;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        text-decoration: none;
-        color: var(--lightpink);
-    }
-
-
-}
-
 
 /* this will be for mobile phones */
-@media screen and (max-width:798px){
+@media screen and (max-width: 798px) {
+  .pfp {
+    height: 30vw;
+    width: 30vw;
+  }
+  .mywork article {
+    display: flex;
+    align-items: center;
+    background-image: url(./study.avif);
+    background-size: 600px 300px;
+    height: 300px;
+    width: 600px;
+    border: 5px solid var(--brown);
+    border-radius: 25px;
+    text-decoration: none;
+    color: var(--lightpink);
+  }
 
-    .pfp{
-        height: 30vw;
-        width: 30vw;
-    }
-    .mywork article{
-        display: flex;
-        align-items: center;
-        background-image: url(./study.avif);
-        background-size: 600px 300px;
-        height: 300px;
-        width: 600px;
-        border: 5px solid var(--brown);
-        border-radius: 25px;
-        text-decoration: none;
-        color: var(--lightpink);
-    }
-    
-    .mywork article div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--brown);
-        width: 18%;
-        height: 17%;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        text-decoration: none;
-        color: var(--lightpink);
-    }
-
+  .mywork article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brown);
+    width: 18%;
+    height: 17%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    color: var(--lightpink);
+  }
 }
 
 /* This is the screen size for an iphone */
-@media screen and (max-width:578px){
-    .container, .about-me, .mywork, .contact, footer{
-        min-width: 100vw;}
-   
-   
-    .smallimg{
-        display: flex;
-        max-width: 500px;
-        min-width: 311px;
-        margin-right: 40%;}
-    .contact{
-        min-width: 100vw;
-    }
-    .contactcontent{
-        font-size: 30px;
-    }
-    
-    .pfp{
-        height: 30vw;
-        width: 30vw;
-    }
-        
-    .mywork article{
-        display: flex;
-        align-items: center;
-        background-image: url(./study.avif);
-        background-size: 400px 200px;
-        height: 200px;
-        width: 400px;
-        border: 5px solid var(--brown);
-        border-radius: 25px;
-        text-decoration: none;
-        color: var(--lightpink);
-    }
-   
-    .mywork article div{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: var(--brown);
-        width: 20%;
-        height: 16%;
-        border-top-right-radius: 10px;
-        border-bottom-right-radius: 10px;
-        text-decoration: none;
-        color: var(--lightpink);
-    }
-    
-    
+@media screen and (max-width: 578px) {
+  .container,
+  .about-me,
+  .mywork,
+  .contact,
+  .footer {
+    min-width: 100vw;
+  }
+
+  .smallimg {
+    display: flex;
+    max-width: 500px;
+    min-width: 311px;
+    margin-right: 40%;
+  }
+  .contact {
+    min-width: 100vw;
+  }
+  .contactcontent {
+    font-size: 30px;
+  }
+
+  .pfp {
+    height: 30vw;
+    width: 30vw;
+  }
+
+  .mywork article {
+    display: flex;
+    align-items: center;
+    background-image: url(./study.avif);
+    background-size: 400px 200px;
+    height: 200px;
+    width: 400px;
+    border: 5px solid var(--brown);
+    border-radius: 25px;
+    text-decoration: none;
+    color: var(--lightpink);
+  }
+
+  .mywork article div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--brown);
+    width: 20%;
+    height: 16%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    text-decoration: none;
+    color: var(--lightpink);
+  }
 }
-
-
